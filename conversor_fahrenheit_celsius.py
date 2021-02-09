@@ -6,4 +6,4 @@ temp_Fahrenheit = int(input('Digite a temperatura em Fahrenheit: '))
 # Na operação de divisão, utilizei o // para que o resultado seja um inteiro e não um float.
 temp_Celsius = (temp_Fahrenheit - 32) * 5 // 9
 
-print('A temperatura em Celsius é', temp_Celsius)
+print('A temperatura em Celsius é de', temp_Celsius,'graus.')
