@@ -13,12 +13,12 @@ Saída de Dados:
 """
 
 segundos = input('Por favor, entre com o número de segundos que deseja converter: ')
-
 total_segundos = int(segundos)
-horas = total_segundos // 3600
-dias = horas // 24
-segs_restantes = total_segundos % 3600
-minutos = segs_restantes // 60
-segs_restantes_final = segs_restantes % 60
+dias = total_segundos // 86400
+segundos_restantes = total_segundos % 86400
+horas = segundos_restantes // 3600
+segundos_restantes = segundos_restantes % 3600
+minutos = segundos_restantes // 60
+segundos_restantes_finais = segundos_restantes % 60
 
-print(dias, 'dias,', horas, 'horas,', minutos, 'minutos e', segs_restantes_final, 'segundos.')
+print(dias, 'dias,', horas, 'horas,', minutos, 'minutos e', segundos_restantes_finais, 'segundos.')
