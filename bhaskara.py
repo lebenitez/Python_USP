@@ -1,9 +1,7 @@
 """
 Como pedido na videoaula desta semana, escreva um programa que calcula as raízes de uma equação do segundo grau.
 
-O programa deve receber os parâmetros  a a,  b b, e  c c da equação  ax^2 + bx + c ax 
-2
- +bx+c, respectivamente, e imprimir o resultado na saída da seguinte maneira:
+O programa deve receber os parâmetros  a a,  b b, e  c c da equação  ax^2 + bx + c ax 2 +bx+c, respectivamente, e imprimir o resultado na saída da seguinte maneira:
 
 Quando não houver raízes reais imprima:
 
