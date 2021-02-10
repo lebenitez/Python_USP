@@ -23,7 +23,7 @@ numero4 = int(input('Digite a segunda coordenada do novo plano cartesiano: '))
 distancia = math.sqrt((numero1-numero2)**2) + ((numero3-numero4)**2)
 
 if distancia < 10:
-      print('longe')
-else:
       print('perto')
+else:
+      print('longe')
 
