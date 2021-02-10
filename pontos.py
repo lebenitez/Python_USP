@@ -14,13 +14,13 @@ perto
 """
 import math
 
-numero1 = int(input('Digite a primeira coordenada: '))
-numero2 = int(input('Digite a segunda coordenada: '))
-numero3 = int(input('Digite a primeira coordenada do novo plano cartesiano: '))
-numero4 = int(input('Digite a segunda coordenada do novo plano cartesiano: '))
+xA = int(input('Digite a primeira coordenada: '))
+xB = int(input('Digite a segunda coordenada: '))
+yA = int(input('Digite a primeira coordenada do novo plano cartesiano: '))
+yB = int(input('Digite a segunda coordenada do novo plano cartesiano: '))
 
 # Calculando a distância
-distancia = math.sqrt((numero1-numero2)**2) + ((numero3-numero4)**2)
+distancia = math.sqrt(pow(xA-xB,2) + pow(yA-yB,2))
 
 if distancia < 10:
       print('perto')
