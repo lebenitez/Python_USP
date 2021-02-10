@@ -1,55 +1,29 @@
 """
-Como pedido na videoaula desta semana, escreva um programa que calcula as raízes de uma equação do segundo grau.
+Receba 4 números na entrada, um de cada vez. Os dois primeiros devem corresponder, respectivamente, às coordenadas x e y de um ponto em um plano cartesiano.
+Os dois últimos devem corresponder, respectivamente, às coordenadas x e y de um outro ponto no mesmo plano.
 
-O programa deve receber os parâmetros  a a,  b b, e  c c da equação  ax^2 + bx + c ax 
-2
- +bx+c, respectivamente, e imprimir o resultado na saída da seguinte maneira:
+Calcule a distância entre os dois pontos. Se a distância for maior ou igual a 10, imprima
 
-Quando não houver raízes reais imprima:
+longe
 
-esta equação não possui raízes reais
+na saída. Caso o contrário, quando a distância for menor que 10, imprima
 
-Quando houver apenas uma raiz real imprima:
-
-a raiz desta equação é X
-
-onde X é o valor da raiz
-
-Quando houver duas raízes reais imprima:
-
-as raízes da equação são X e Y
-
-onde X e Y são os valor das raízes.
-
-Além disso, no caso de existirem 2 raízes reais, elas devem ser impressas em ordem crescente. Exemplos:
-
-as raízes da equação são 1.0 e 2.0
-
-as raízes da equação são -2.0 e 0.0
+perto
+ 
+​	
 """
-
-
 import math
 
-a = float(input('Digite o valor de a: '))
-b = float(input('Digite o valor de b: '))
-c = float(input('Digite o valor de c: '))
+numero1 = int(input('Digite a primeira coordenada: '))
+numero2 = int(input('Digite a segunda coordenada: '))
+numero3 = int(input('Digite a primeira coordenada do novo plano cartesiano: '))
+numero4 = int(input('Digite a segunda coordenada do novo plano cartesiano: '))
 
-# Calculando o Delta
-delta = b ** 2 - 4 * a * c
+# Calculando a distância
+distancia = math.sqrt((numero1-numero2)**2) + ((numero3-numero4)**2)
 
-# Calculando a raiz quadrada
-
-if delta == 0:
-      raiz1 = (-b + math.sqrt(delta))/(2 * a)
-      print('a raiz desta equação é', raiz1)
+if distancia > 10:
+      print('longe')
 else:
-      if delta < 0:
-            print('esta equação não possui raízes reais')
-      else:
-            raiz1 = (-b + math.sqrt(delta))/(2 * a)
-            raiz2 = (-b - math.sqrt(delta))/(2 * a)
-            if raiz1 > raiz2:
-                  print('as raízes da equação são', raiz1, 'e', raiz2)
-            else:
-                  print('as raízes da equação são', raiz2, 'e', raiz1)
+      print('perto')
+
