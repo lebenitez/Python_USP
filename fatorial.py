@@ -1,3 +1,7 @@
+"""
+Escreva um programa que receba um número natural  n n na entrada e imprima  n! n! (fatorial) na saída.
+"""
+
 # Descomentar caso vá usar a função factorial do módulo math
 # import math
 
