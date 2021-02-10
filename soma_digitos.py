@@ -7,12 +7,15 @@ div = numero // 10
 x = 0
 i = 0
 
-while div > 0:
-      x = x + (numero % 10)
-      numero = div
-      if (div / 2) < 5 and i != 1:
-            div += 1
-            i += 1
-      else:
-            div = div // 10
-print(x)
+if div == 0:
+      print(numero)
+else:
+      while div > 0:
+            x = x + (numero % 10)
+            numero = div
+            if (div / 2) < 5 and i != 1:
+                  div += 1
+                  i += 1
+            else:
+                  div = div // 10
+      print(x)
