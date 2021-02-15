@@ -12,6 +12,6 @@ while num // 10 !=0: # Rode até que a variável num seja igual a zero
             print('sim')
             break
       rest1 = rest
-if num // 10 == 0 and rest != rest1:
+if num // 10 == 0 or rest != rest1:
       print('não')
 
