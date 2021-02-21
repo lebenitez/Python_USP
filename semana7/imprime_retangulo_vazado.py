@@ -16,9 +16,9 @@ digite a altura: 2
 
 
 """
-
-a = int(input('digite a altura:'))
 l = int(input('digite a largura:'))
+a = int(input('digite a altura:'))
+
 
 a -= 2
 print(l*'#')
