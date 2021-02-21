@@ -1,3 +1,2 @@
 # Python_USP
- Curso Ciências da Computação USP - Python
- https://www.coursera.org/learn/ciencia-computacao-python-conceitos
+<a href="https://www.coursera.org/learn/ciencia-computacao-python-conceitos">Curso Ciências da Computação USP - Python</a>
